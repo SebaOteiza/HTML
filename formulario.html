@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+
+    <!--Para crear los formularios se utiliza la etiqueta FORM-->
+
+    <form action="">
+        <!--el ACTION y otras etiquetas como METHOD se utilizan para el envío de datos trabajando en BACKEND-->
+
+        <!--podemos agregar en los input el atributo PLAYHOLDER LO QUE MOSTRARÁ UN PEQUEÑO TEXTO DENTRO DEL CAMPO-->
+        <!--tambien podemos agregarle el atributo VALUE lo que le otorga un valor por defecto, aparecerá ya puesto en la página que trabajamos -->
+        <!--Otro atributo es READONLY lo que genera es que ese campo solo será de lectura, no permite modificar  -->
+        <!--Otro atributo es el DISABLED lo que hace es deshabilitar ese campo-->
+        <!--Otro atributo es el SIZE en el cual podemos colocar el tamaño del input (en px) -->
+        <!--Otro atributo es el REQUIRED este campo es requerido -->
+        <!--Otro atributo es el AUTOFOCUS que posiciona el puntero en el campo que tenga este atributo  -->
+
+
+
+
+        <label for="numero"> Número : </label><!--este label está destino al input de abajo-->
+        <input type="number" name="numero" id="numero" placeholder="ingrese número" required autofocus> <!--esto es un campo de texto normal que acepta solo numeros-->
+        <br><br>
+        <label for="nombre"> Nombre : </label><!--este label está destino al input de abajo-->
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+        <!--esto es un campo de texto normal que acepta cadena de caracteres-->
+
+        <br><br>
+        <label for="email"> Email : </label><!--este label está destino al input de abajo-->
+        <input type="email" name="email" id="email" placeholder="Ingrese su email" required> <!--esto es un campo de tipo EMAIL -->
+
+        <br><br>
+        <label for="pass"> Contraseña : </label><!--este label está destino al input de abajo-->
+        <input type="password" name="pass" id="pass" placeholder="Ingrese su contraseña" required>
+        <!--esto es un campo de tipo PASSWORD lo que hará será ocultar los caracteres mostrando asteriscos -->
+
+        <br><br>
+
+        <!--PODEMOS CREAR UN BOTÓN para enviar todo el formulario-->
+        <input type="submit" value="enviar" name="enviar"> <!--es de tipo submit y el valor que tiene es de enviar -->
+        <!--en este caso, al enviar los datos en la pagina, se verán reflejados en la URL-->
+        <!--EN LA URL VEREMOS QUE EL NAME DE CADA ATRIBUTO SERÁ = AL VALOR -->
+        <!--CUANDO TRABAJEMOS EL EL BACKEND Y NO QUERAMOS QUE ESOS DATOS SE VEAN EN EL URL DEBEMOS PONER ARRIBA EN FORM EL METHOD "POST"-->
+
+    </form>
+
+
+</body>
+
+</html>
